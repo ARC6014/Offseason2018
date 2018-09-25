@@ -2,91 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="377f144d-be85-4a11-b46c-fae5da01b67c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Offseason2018.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Offseason2018_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Offseason2018_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/gradle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_Deploy_Robot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debugger_USB_Connection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Deploy_Robot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Offseason2018.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Offseason2018.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Offseason2018.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/src/cpp/Robot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/cpp/src/include/MyHeader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quickstart/java/src/main/java/frc/team0000/robot/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/Offseason2018.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frc/team6014/OI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frc/team6014/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frc/team6014/RobotMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frc/team6014/commands/ExampleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frc/team6014/subsystems/ExampleSubsystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/src/cpp/Robot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/cpp/src/include/MyHeader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quickstart/java/src/main/java/frc/team0000/robot/Robot.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/untitled/.gradle/" />
@@ -771,12 +700,12 @@
       <updated>1537815928869</updated>
       <workItem from="1537815935846" duration="5263000" />
       <workItem from="1537910998314" duration="385000" />
-      <workItem from="1537911436066" duration="2139000" />
+      <workItem from="1537911436066" duration="2745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7787000" />
+    <option name="totallyTimeSpent" value="8393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,9 +717,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="504" width="1309" height="780" extended-state="0" />
+    <frame x="649" y="0" width="649" height="768" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12152502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25542572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -805,7 +734,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.73111784" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.7446154" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="FRC" order="10" weight="0.3353846" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
