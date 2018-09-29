@@ -26,7 +26,7 @@ public class Robot extends TimedRobot
 {
 
     public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
-    public static OI oi;
+    public static BasicControl oi;
 
     private Command autonomousCommand;
     private SendableChooser<Command> chooser = new SendableChooser<>();
@@ -38,7 +38,7 @@ public class Robot extends TimedRobot
     @Override
     public void robotInit() 
     {
-        oi = new OI();
+        oi = new BasicControl();
         chooser.addDefault("Default Auto", new ExampleCommand());
         // chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
