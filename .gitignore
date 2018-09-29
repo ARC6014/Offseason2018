@@ -1,0 +1,9 @@
+/bin/
+/build/
+/dist/
+/.gradle/
+/.idea/
+*.iml
+*~
+build.properties
+build.xml
