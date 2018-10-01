@@ -30,6 +30,8 @@ dependencies {
     compile ctre()
     compile navx()
     compile openrio.powerup.matchData()
+
+    compile files('lib/sweep-userstatic/java/lib/sweep.jar')
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
