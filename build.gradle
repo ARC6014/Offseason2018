@@ -30,6 +30,13 @@ dependencies {
     compile ctre()
     compile navx()
     compile openrio.powerup.matchData()
+    implementation 'com.github.PeterJohnson:sweep-sdk:v2018.1.1'    
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
