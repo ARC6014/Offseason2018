@@ -1,8 +1,5 @@
 package frc.team6014.robot;
 
-import edu.wpi.first.wpilibj.GenericHID;
-import edu.wpi.first.wpilibj.XboxController;
-
 abstract public class ControlSystem {
 
     abstract public double getDriveX();

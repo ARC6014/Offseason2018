@@ -1,5 +1,8 @@
 package frc.team6014.robot;
 
+import edu.wpi.first.wpilibj.GenericHID;
+import edu.wpi.first.wpilibj.XboxController;
+
 public class BasicControl extends ControlSystem {
 
     XboxController xbox = new XboxController(0);
