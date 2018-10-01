@@ -2,6 +2,10 @@ package frc.team6014.robot;
 
 public class BasicControl extends ControlSystem {
 
+    XboxController xbox = new XboxController(0);
+    GenericHID.Hand rightStick = GenericHID.Hand.kRight;
+    GenericHID.Hand leftStick = GenericHID.Hand.kLeft;
+
     public double getDriveX() { return xbox.getX(rightStick); }
     public double getDriveY() { return -xbox.getY(rightStick); }
     public boolean getReverseButton() { return xbox.getYButton(); }

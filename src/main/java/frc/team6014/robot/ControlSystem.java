@@ -4,10 +4,6 @@ import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 
 abstract public class ControlSystem {
-    XboxController xbox = new XboxController(0);
-    XboxController xboxDrive = new XboxController(1);
-    GenericHID.Hand rightStick = GenericHID.Hand.kRight;
-    GenericHID.Hand leftStick = GenericHID.Hand.kLeft;
 
     abstract public double getDriveX();
     abstract public double getDriveY();
