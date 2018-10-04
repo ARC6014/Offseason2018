@@ -44,17 +44,17 @@ public class Lidar extends Subsystem
     }
 
     // Gets the speed of the motor of the laser scanner, in Hz
-    int getMotorSpeed() {
+    public int getMotorSpeed() {
         return SweepJNI.getMotorSpeed(sweeper);
     }
 
     // Sets the speed of the motor of the laser scanner, in Hz
-    void setMotorSpeed(int speed) {
+    public void setMotorSpeed(int speed) {
         SweepJNI.setMotorSpeed(sweeper, speed);
     }
 
     // Gets and parses the scan results and forms them into a 2D grid
-    void sample() {
+    public void sample() {
         // Gets scan results and creates an array to which the values will be copied over
         // by turning the polar coordinates Cartesian
         SweepSample[] samples = SweepJNI.getScan(sweeper);

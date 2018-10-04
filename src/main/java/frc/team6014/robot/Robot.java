@@ -13,6 +13,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.team6014.robot.commands.ExampleCommand;
 import frc.team6014.robot.subsystems.ExampleSubsystem;
+import frc.team6014.robot.subsystems.Lidar;
+
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -26,6 +28,7 @@ public class Robot extends TimedRobot
 {
 
     public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+    public static final Lidar lidar = new Lidar();
     public static BasicControl oi;
 
     private Command autonomousCommand;
