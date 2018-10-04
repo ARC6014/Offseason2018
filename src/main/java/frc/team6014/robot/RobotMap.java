@@ -7,6 +7,8 @@
 
 package frc.team6014.robot;
 
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -15,13 +17,27 @@ package frc.team6014.robot;
  */
 public class RobotMap 
 {
-    // For example to map the left and right motors, you could define the
-    // following variables to use with your drivetrain subsystem.
-    // public static int leftMotor = 1;
-    // public static int rightMotor = 2;
+    public static TalonSRX frontLeft = new TalonSRX(1);
+    public static VictorSPX rearLeft = new VictorSPX(1);
+    public static TalonSRX frontRight = new TalonSRX(1);
+    public static VictorSPX rearRight = new VictorSPX(1);
 
-    // If you are using multiple modules, make sure to define both the port
-    // number and the module. For example you with a rangefinder:
-    // public static int rangefinderPort = 1;
-    // public static int rangefinderModule = 1;
+
+    public static int leftEncoderA = 1;
+    public static int leftEncoderB = 1;
+    public static int rightEncoderA = 1;
+    public static int rightEncoderB = 1;
+
+
+    public static VictorSPX elevatorLeft = new VictorSPX(1);
+    public static VictorSPX elevatorRight = new VictorSPX(1);
+
+    public static int elevatorEncoderA = 1;
+    public static int ElevatorEncoderB = 1;
+
+    public static VictorSPX intakeLeft = new VictorSPX(1);
+    public static VictorSPX intakeRight = new VictorSPX(1);
+    public static VictorSPX flipper = new VictorSPX(1);
+
+
 }
