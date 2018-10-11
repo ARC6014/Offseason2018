@@ -11,10 +11,12 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import frc.team6014.robot.commands.ExampleCommand;
 import frc.team6014.robot.subsystems.ExampleSubsystem;
 import frc.team6014.robot.subsystems.Lidar;
 import frc.team6014.robot.subsystems.Drive;
+import frc.team6014.robot.subsystems.Intake;
 import frc.team6014.robot.subsystems.MotionController;
 
 /**
@@ -31,7 +33,7 @@ public class Robot extends TimedRobot
     public static final Lidar lidar = new Lidar();
     public static final Drive drive = new Drive();
     public static BasicControl oi;
-
+    public static Intake intake;
     private Command autonomousCommand;
     private SendableChooser<Command> chooser = new SendableChooser<>();
 
@@ -43,6 +45,7 @@ public class Robot extends TimedRobot
     public void robotInit() 
     {
         oi = new BasicControl();
+        intake = new Intake();
         //chooser.addDefault("Default Auto", new ExampleCommand());
         // chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
