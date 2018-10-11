@@ -18,9 +18,9 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 public class RobotMap 
 {
     public static TalonSRX frontLeft = new TalonSRX(1);
-    public static VictorSPX rearLeft = new VictorSPX(1);
-    public static TalonSRX frontRight = new TalonSRX(1);
-    public static VictorSPX rearRight = new VictorSPX(1);
+    public static VictorSPX rearLeft = new VictorSPX(2);
+    public static TalonSRX frontRight = new TalonSRX(3);
+    public static VictorSPX rearRight = new VictorSPX(4);
 
 
     public static int leftEncoderA = 1;
@@ -29,15 +29,15 @@ public class RobotMap
     public static int rightEncoderB = 1;
 
 
-    public static VictorSPX elevatorLeft = new VictorSPX(1);
-    public static VictorSPX elevatorRight = new VictorSPX(1);
+    public static VictorSPX elevatorLeft = new VictorSPX(5);
+    public static VictorSPX elevatorRight = new VictorSPX(6);
 
     public static int elevatorEncoderA = 1;
     public static int ElevatorEncoderB = 1;
 
-    public static VictorSPX intakeLeft = new VictorSPX(1);
-    public static VictorSPX intakeRight = new VictorSPX(1);
-    public static VictorSPX flipper = new VictorSPX(1);
+    public static VictorSPX intakeLeft = new VictorSPX(7);
+    public static VictorSPX intakeRight = new VictorSPX(8);
+    public static VictorSPX flipper = new VictorSPX(9);
 
 
 }

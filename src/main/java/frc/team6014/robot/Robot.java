@@ -11,17 +11,11 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-<<<<<<< HEAD
 import frc.team6014.robot.commands.ExampleCommand;
 import frc.team6014.robot.subsystems.ExampleSubsystem;
 import frc.team6014.robot.subsystems.Lidar;
-
-=======
-
 import frc.team6014.robot.subsystems.Drive;
-import frc.team6014.robot.subsystems.Lidar;
 import frc.team6014.robot.subsystems.MotionController;
->>>>>>> 2d7ed41804e3bc40472d4ac0b27895f7cca159db
 
 /**
  * The VM is configured to automatically run this class, and to call the
