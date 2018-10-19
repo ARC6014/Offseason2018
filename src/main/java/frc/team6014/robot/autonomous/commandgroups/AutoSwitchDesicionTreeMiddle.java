@@ -8,7 +8,7 @@ import frc.team6014.robot.autonomous.commands.Intake;
 import frc.team6014.robot.autonomous.commands.TimedStraightDrive;
 import frc.team6014.robot.autonomous.commands.TurnToAngle;
 import frc.team6014.robot.autonomous.commands.Flipper;
-//import frc.team6014.robot.autonomous.commands.LiftElevator;
+import frc.team6014.robot.autonomous.commands.LiftElevator;
 import frc.team6014.robot.autonomous.commands.TimedDrive;
 
 public class AutoSwitchDesicionTreeMiddle extends CommandGroup {

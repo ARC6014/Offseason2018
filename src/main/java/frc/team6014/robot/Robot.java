@@ -17,6 +17,7 @@ import frc.team6014.robot.subsystems.Lidar;
 import frc.team6014.robot.subsystems.Drive;
 import frc.team6014.robot.subsystems.Intake;
 import frc.team6014.robot.subsystems.MotionController;
+import frc.team6014.robot.subsystems.Elevator;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -31,6 +32,7 @@ public class Robot extends TimedRobot
 
     public static final Lidar lidar = new Lidar();
     public static final Drive drive = new Drive();
+    public static Elevator elevator;
     public static BasicControl oi;
     public static Intake intake;
     public static MotionController motionController = new MotionController();
@@ -47,6 +49,7 @@ public class Robot extends TimedRobot
     {
         oi = new BasicControl();
         intake = new Intake();
+        elevator = new Elevator();
         //chooser.addDefault("Default Auto", new ExampleCommand());
         //chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);

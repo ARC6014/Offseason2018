@@ -1,4 +1,3 @@
-/*
 package frc.team6014.robot.autonomous.commands;
 
 import edu.wpi.first.wpilibj.command.TimedCommand;
@@ -31,4 +30,4 @@ public class LiftElevator extends TimedCommand {
     @Override
     protected void interrupted() { end();}
 }
-*/
+
