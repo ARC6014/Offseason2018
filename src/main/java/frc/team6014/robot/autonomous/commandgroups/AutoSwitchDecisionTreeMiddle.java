@@ -11,8 +11,8 @@ import frc.team6014.robot.autonomous.commands.Flipper;
 import frc.team6014.robot.autonomous.commands.LiftElevator;
 import frc.team6014.robot.autonomous.commands.TimedDrive;
 
-public class AutoSwitchDesicionTreeLeft extends CommandGroup {
-    public void AutoSwitchDesicionTreeLeft() {
+public class AutoSwitchDecisionTreeMiddle extends CommandGroup {
+    public void AutoSwitchDecisionTreeMiddle() {
         String gameSwitchData = Robot.gameData.substring(0, 1);
         if (gameSwitchData.length() > 0) {
             if (gameSwitchData.equals("R")) {
@@ -25,3 +25,4 @@ public class AutoSwitchDesicionTreeLeft extends CommandGroup {
         }
     }
 }
+

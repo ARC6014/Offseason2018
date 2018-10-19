@@ -6,8 +6,8 @@ import frc.team6014.robot.Robot;
 import frc.team6014.robot.autonomous.commands.TimedStraightDrive;
 import frc.team6014.robot.autonomous.commands.TurnToAngle;
 
-public class AutoDesicionTreeTest extends CommandGroup {
-    public AutoDesicionTreeTest() {
+public class AutoDecisionTreeTest extends CommandGroup {
+    public void AutoDecisionTreeTest() {
         String gameSwitchData = Robot.gameData.substring(0,2);
         if (gameSwitchData.length() > 0) {
             if (gameSwitchData.equals("RR")) {
