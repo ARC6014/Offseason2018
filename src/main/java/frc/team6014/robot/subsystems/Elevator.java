@@ -13,15 +13,15 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
  */
 public class Elevator extends Subsystem {
     VictorSPX elevatorMain = RobotMap.elevatorLeft;
-    VictorSPX elevatorRight = RobotMap.elevatorRight;
+    //VictorSPX elevatorRight = RobotMap.elevatorRight;
 
     //public double defSpeed = 0.6;
+
     //public double maxSpeed = 0.8;
 
     public Elevator() {
         elevatorMain.setInverted(true);
-        elevatorRight.setInverted(true);
-        elevatorRight.follow(elevatorMain);
+        //elevatorRight.follow(elevatorMain);
         }
 
     @Override

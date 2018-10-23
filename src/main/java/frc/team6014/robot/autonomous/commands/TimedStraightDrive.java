@@ -6,7 +6,7 @@ import frc.team6014.robot.Robot;
 
 public class TimedStraightDrive extends TimedCommand {
 
-    double speed,angle;
+    private double speed,angle;
     public TimedStraightDrive(double timeout, double speed, double angle) {
         super(timeout);
         requires(Robot.motionController);
@@ -18,6 +18,7 @@ public class TimedStraightDrive extends TimedCommand {
     @Override
     protected void initialize() {
         Robot.motionController.setAngle(angle);
+
         Robot.motionController.enable();
     }
 

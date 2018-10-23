@@ -12,15 +12,24 @@ abstract public class ControlSystem {
 
     public double getReverseFactor() {
         boolean curReverseButton = getReverseButton();
-        if(curReverseButton && !prevReverseButton) {
-            reverseFactor*=-1.0;
+        if (curReverseButton && !prevReverseButton) {
+            reverseFactor *= -1.0;
         }
         prevReverseButton = curReverseButton;
         return reverseFactor;
+    }
+    abstract public double getFlipNegative();
+    abstract public double getFlipPositive();
+
+    public double getFlipFactor() {
+        if(Math.abs(getFlipPositive()-getFlipNegative())<0.05) {
+            return 0;
+        } else {
+            return getFlipPositive()-getFlipNegative();
+        }
     }
 
     abstract public double getElevator();
     abstract public boolean getIntake();
     abstract public boolean getLaunch();
-    abstract public boolean getFlipIntake();
 }

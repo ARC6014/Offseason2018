@@ -17,5 +17,6 @@ public class AlternativeControl extends ControlSystem {
     public double getElevator() { return xbox.getY(rightStick); }
     public boolean getIntake() { return xbox.getBumper(leftStick); }
     public boolean getLaunch() { return xbox.getBumper(rightStick); }
-    public boolean getFlipIntake() { return xbox.getXButton(); }
+    public double getFlipPositive() { return xboxDrive.getTriggerAxis(leftStick); }
+    public double getFlipNegative() { return xboxDrive.getTriggerAxis(rightStick); }
 }

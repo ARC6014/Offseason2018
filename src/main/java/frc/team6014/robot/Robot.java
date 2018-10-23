@@ -6,6 +6,7 @@
 /*----------------------------------------------------------------------------*/
 package frc.team6014.robot;
 
+import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -13,6 +14,7 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+import frc.team6014.robot.autonomous.commandgroups.*;
 import frc.team6014.robot.subsystems.Lidar;
 import frc.team6014.robot.subsystems.Drive;
 import frc.team6014.robot.subsystems.Intake;
@@ -30,13 +32,12 @@ import frc.team6014.robot.subsystems.Elevator;
 public class Robot extends TimedRobot 
 {
 
-    public static final Lidar lidar = new Lidar();
-    public static final Drive drive = new Drive();
+    //public static Lidar lidar;
+    public static Drive drive;
     public static Elevator elevator;
-    public static BasicControl oi;
+    public static ControlSystem oi;
     public static Intake intake;
-    public static MotionController motionController = new MotionController();
-    public static String gameData = "LLL";
+    public static MotionController motionController;
     private Command autonomousCommand;
     private SendableChooser<Command> chooser = new SendableChooser<>();
 
@@ -45,14 +46,29 @@ public class Robot extends TimedRobot
      * used for any initialization code.
      */
     @Override
-    public void robotInit() 
+    public void robotInit()
     {
-        oi = new BasicControl();
+        oi = new AlternativeControl();
+        drive = new Drive();
         intake = new Intake();
         elevator = new Elevator();
+        motionController = new MotionController();
         //chooser.addDefault("Default Auto", new ExampleCommand());
         //chooser.addObject("My Auto", new MyAutoCommand());
-        SmartDashboard.putData("Auto mode", chooser);
+
+        chooser.addDefault("Run Everywhere", new AutoDecisionTreeTest());
+        chooser.addObject("Delayed", new DelayedAuto());
+        chooser.addObject("Switch Left", new AutoSwitchDecisionTreeLeft());
+        chooser.addObject("Switch Middle", new AutoSwitchDecisionTreeMiddle());
+        chooser.addObject("Switch Right", new AutoSwitchDecisionTreeRight());
+        SmartDashboard.putData("Auto Mode", chooser);
+
+        //CameraServer.getInstance().startAutomaticCapture();
+    }
+
+    @Override
+    public void robotPeriodic() {
+        SmartDashboard.putNumber("Heading", motionController.getHeading());
     }
 
     /**
@@ -96,7 +112,7 @@ public class Robot extends TimedRobot
          */
 
         // schedule the autonomous command (example)
-        if (autonomousCommand != null) 
+        if (autonomousCommand != null)
         {
             autonomousCommand.start();
         }
@@ -122,6 +138,7 @@ public class Robot extends TimedRobot
         {
             autonomousCommand.cancel();
         }
+        Teleop.init();
     }
 
     /**
@@ -131,6 +148,7 @@ public class Robot extends TimedRobot
     public void teleopPeriodic() 
     {
         Scheduler.getInstance().run();
+        Teleop.periodic();
     }
 
     /**
@@ -142,7 +160,7 @@ public class Robot extends TimedRobot
         
     }
 
-    public void getGameData() {
-        gameData = DriverStation.getInstance().getGameSpecificMessage();
+    public static String getGameData() {
+        return DriverStation.getInstance().getGameSpecificMessage();
     }
 }

@@ -18,9 +18,9 @@ public class Intake extends Subsystem
 
 
     public Intake() {
-        intakeRight.follow(intakeMain);
         intakeMain.setInverted(true);
         flipper.setInverted(true);
+        intakeRight.follow(intakeMain);
     }
 
 

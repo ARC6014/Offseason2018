@@ -10,7 +10,7 @@ public class TurnToAngle extends TimedCommand {
     private double angle;
 
 
-    public TurnToAngle(double timeout, double angle, double rotationSpeed) {
+    public TurnToAngle(double timeout, double rotationSpeed, double angle) {
         super(timeout);
         requires(Robot.motionController);
         requires(Robot.drive);

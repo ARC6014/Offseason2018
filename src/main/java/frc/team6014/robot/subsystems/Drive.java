@@ -15,18 +15,18 @@ public class Drive extends Subsystem
     public final double defSpeed = 0.9;
     public double maxSpeed = 0.9;
 
-    TalonSRX frontLeft = RobotMap.frontLeft;
+    VictorSPX frontLeft = RobotMap.frontLeft;
     VictorSPX rearLeft = RobotMap.rearLeft;
-    TalonSRX frontRight = RobotMap.frontRight;
+    VictorSPX frontRight = RobotMap.frontRight;
     VictorSPX rearRight = RobotMap.rearRight;
 
-    private final int leftEncoderCPR = 2048;
+    /*private final int leftEncoderCPR = 2048;
     private final int rightEncoderCPR = 2048;
-    private final double wheelDiam = 0.1524;//In meters, actually 6 inches
+    private final double wheelDiam = 0.1524;//In meters, actually 6 inches*/
 
 
 
-    public double getLeftEncoderRev() {
+    /*public double getLeftEncoderRev() {
         return Robot.drive.getLeftEncoderPos()/(double)(leftEncoderCPR);
     }
 
@@ -40,7 +40,7 @@ public class Drive extends Subsystem
 
     public double getRightDistance() {
         return 2*getRightEncoderRev()*wheelDiam*Math.PI;
-    }
+    }*/
 
 
 
@@ -54,12 +54,12 @@ public class Drive extends Subsystem
         frontLeft.configNeutralDeadband(0.02, 20);
         frontRight.configNeutralDeadband(0.02, 20);
 
-        frontLeft.setSensorPhase(true);
+        /*frontLeft.setSensorPhase(true);
         frontRight.setSensorPhase(true);
 
         frontLeft.configSelectedFeedbackSensor(FeedbackDevice.QuadEncoder, 0, 20);
         frontRight.configSelectedFeedbackSensor(FeedbackDevice.QuadEncoder, 0, 20);
-
+        */
         this.setMaxOutput(maxSpeed);
     }
 
@@ -70,7 +70,7 @@ public class Drive extends Subsystem
     }
 
 
-    public int getLeftEncoderPos() {
+    /*public int getLeftEncoderPos() {
         return frontLeft.getSelectedSensorPosition(0);
     }
     public int getRightEncoderPos() {
@@ -80,14 +80,12 @@ public class Drive extends Subsystem
     public void resetEncoders() {
         frontLeft.setSelectedSensorPosition(0,0,20);
         frontRight.setSelectedSensorPosition(0, 0, 20);
-    }
-
-
+    }*/
 
     public void setMaxOutput(double speed) {
         maxSpeed = speed;
     }
-    protected double limit(double value) {
+    private double limit(double value) {
         if (value > 1.0) {
             return 1.0;
         }
