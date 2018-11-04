@@ -16,7 +16,11 @@ public class Teleop {
             System.out.println("");
         }*/
         Robot.drive.arcadeDrive(Robot.oi.getDriveY()*Robot.oi.getReverseFactor(),Robot.oi.getDriveX());
-        Robot.elevator.setElevatorSpeed(Robot.oi.getElevator());
+        if(Robot.oi.getHoldElevator()) {
+            Robot.elevator.setElevatorSpeed(0.1);
+        } else {
+            Robot.elevator.setElevatorSpeed(Robot.oi.getElevator());
+        }
         if(Robot.oi.getIntake()) {
             Robot.intake.setIntakeSpeed(0.65);
         } else if(Robot.oi.getLaunch()) {

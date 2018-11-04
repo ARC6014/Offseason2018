@@ -30,6 +30,7 @@ abstract public class ControlSystem {
     }
 
     abstract public double getElevator();
+    abstract public boolean getHoldElevator();
     abstract public boolean getIntake();
     abstract public boolean getLaunch();
 }
