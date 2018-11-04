@@ -48,7 +48,7 @@ public class Robot extends TimedRobot
     @Override
     public void robotInit()
     {
-        oi = new AlternativeControl();
+        oi = new BasicControl();
         drive = new Drive();
         intake = new Intake();
         elevator = new Elevator();
@@ -69,6 +69,13 @@ public class Robot extends TimedRobot
     @Override
     public void robotPeriodic() {
         SmartDashboard.putNumber("Heading", motionController.getHeading());
+        SmartDashboard.putNumber("Accel X", motionController.getAccelX());
+        SmartDashboard.putNumber("Accel Y", motionController.getAccelY());
+        SmartDashboard.putNumber("Accel Z", motionController.getAccelZ());
+        SmartDashboard.putNumber("Drive X",oi.getDriveX());
+        SmartDashboard.putNumber("Drive Y",oi.getDriveY());
+        SmartDashboard.putNumber("Elevator Y",oi.getElevator());
+        SmartDashboard.putNumber("Flip Factor",oi.getFlipFactor());
     }
 
     /**

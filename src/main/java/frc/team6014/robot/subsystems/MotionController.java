@@ -42,6 +42,9 @@ public class MotionController extends PIDSubsystem {
     public double getHeading() {
         return mxp.getYaw();
     }
+    public double getAccelY() { return mxp.getWorldLinearAccelY(); }
+    public double getAccelX() { return mxp.getWorldLinearAccelX(); }
+    public double getAccelZ() { return mxp.getWorldLinearAccelZ(); }
     public void reset() {
         mxp.reset();
     }

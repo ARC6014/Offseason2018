@@ -7,13 +7,14 @@ import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.team6014.robot.RobotMap;
 import frc.team6014.robot.Robot;
 
 public class Drive extends Subsystem
 {
-    public final double defSpeed = 0.9;
-    public double maxSpeed = 0.9;
+    public final double defSpeed = 0.5;
+    public double maxSpeed = 0.5;
 
     VictorSPX frontLeft = RobotMap.frontLeft;
     VictorSPX rearLeft = RobotMap.rearLeft;
@@ -124,6 +125,8 @@ public class Drive extends Subsystem
         }
         frontLeft.set(ControlMode.PercentOutput, limit(left)*maxSpeed);
         frontRight.set(ControlMode.PercentOutput, limit(right)*maxSpeed);
+        SmartDashboard.putNumber("Drive Left",limit(left)*maxSpeed);
+        SmartDashboard.putNumber("Drive Right",limit(right)*maxSpeed);
     }
 
     public void tankDrive(double leftSpeed, double rightSpeed) {

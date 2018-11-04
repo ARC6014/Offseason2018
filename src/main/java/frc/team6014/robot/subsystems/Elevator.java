@@ -20,7 +20,6 @@ public class Elevator extends Subsystem {
     //public double maxSpeed = 0.8;
 
     public Elevator() {
-        elevatorMain.setInverted(true);
         //elevatorRight.follow(elevatorMain);
         }
 
