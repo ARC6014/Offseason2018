@@ -25,14 +25,16 @@ public class Teleop {
 
         //Automatic Drop
         if (Robot.oi.getDropAction() == true) {
+
             elevatorBusy = true;
+
             long timeoutDrop = System.currentTimeMillis() + 200;
             while (System.currentTimeMillis() < timeoutDrop) {
                 Robot.elevator.setElevatorSpeed(-0.5);
             }
             Robot.elevator.setElevatorSpeed(0);
-            elevatorBusy = false;
 
+            elevatorBusy = false;
 
             long timeoutDrive = System.currentTimeMillis() + 300;
             while (System.currentTimeMillis() < timeoutDrive) {
@@ -44,8 +46,8 @@ public class Teleop {
         //Automatic Lift
         if (Robot.oi.liftLevel_1() == true) {
             elevatorBusy = true;
-            long timeoutDrop = System.currentTimeMillis() + 1100;
-            while (System.currentTimeMillis() < timeoutDrop) {
+            long timeoutLift = System.currentTimeMillis() + 1100;
+            while (System.currentTimeMillis() < timeoutLift) {
                 Robot.elevator.setElevatorSpeed(1);
             }
             Robot.elevator.setElevatorSpeed(0);
