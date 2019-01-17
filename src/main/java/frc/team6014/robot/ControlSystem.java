@@ -18,6 +18,18 @@ abstract public class ControlSystem {
         prevReverseButton = curReverseButton;
         return reverseFactor;
     }
+
+    boolean prevHoldButton = false;
+    double holdFactor = 1.0;
+    public double getHoldFactor() {
+        boolean curHoldFactor = getHoldElevator();
+        if (curHoldFactor && !prevHoldButton) {
+            holdFactor *= -1.0;
+        }
+        prevHoldButton = curHoldFactor;
+        return holdFactor;
+    }
+
     abstract public double getFlipNegative();
     abstract public double getFlipPositive();
 

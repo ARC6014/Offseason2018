@@ -1,4 +1,5 @@
 package frc.team6014.robot;
+import java.lang.Math;
 
 public class Teleop {
     public static void init() {
@@ -16,11 +17,37 @@ public class Teleop {
             System.out.println("");
         }*/
         Robot.drive.arcadeDrive(Robot.oi.getDriveY()*Robot.oi.getReverseFactor(),Robot.oi.getDriveX());
+
+        /*
+        boolean Hold = false;
+        if (Robot.oi.getXButton()) {
+            Hold = true;
+        }
+        */
+
+
+
+
+        if (Robot.oi.getHoldFactor() == 1) {
+            if(Math.abs(Robot.oi.getElevator()) <= 0.02) {
+                Robot.elevator.setElevatorSpeed(0.1);
+            } else {
+                Robot.elevator.setElevatorSpeed(Robot.oi.getElevator());
+            }
+        } else {
+            Robot.elevator.setElevatorSpeed(Robot.oi.getElevator());
+        }
+
+
+
+        /*
         if(Robot.oi.getHoldElevator()) {
             Robot.elevator.setElevatorSpeed(0.1);
         } else {
             Robot.elevator.setElevatorSpeed(Robot.oi.getElevator());
         }
+        */
+
         if(Robot.oi.getIntake()) {
             Robot.intake.setIntakeSpeed(0.65);
         } else if(Robot.oi.getLaunch()) {

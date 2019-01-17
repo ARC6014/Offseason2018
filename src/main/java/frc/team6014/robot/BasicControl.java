@@ -15,7 +15,11 @@ public class BasicControl extends ControlSystem {
     public boolean getReverseButton() { return xbox.getYButton(); }
 
     public double getElevator() { return -xbox.getY(rightStick); }
+
     public boolean getHoldElevator() { return xbox.getXButton(); }
+
+    //public boolean getHoldElevator() {return xbox.getXButton(); }
+
     public boolean getIntake() { return xbox.getBumper(leftStick); }
     public boolean getLaunch() { return xbox.getBumper(rightStick); }
     public double getFlipPositive() { return xbox.getTriggerAxis(leftStick); }
