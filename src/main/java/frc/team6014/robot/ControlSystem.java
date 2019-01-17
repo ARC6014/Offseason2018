@@ -45,4 +45,6 @@ abstract public class ControlSystem {
     abstract public boolean getHoldElevator();
     abstract public boolean getIntake();
     abstract public boolean getLaunch();
+    abstract public boolean getDropAction();
+    abstract public boolean liftLevel_1();
 }
