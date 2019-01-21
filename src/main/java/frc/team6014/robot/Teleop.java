@@ -85,6 +85,13 @@ public class Teleop {
         } else {
             Robot.intake.setIntakeSpeed(0);
         }
-        Robot.intake.setFlipperSpeed(Robot.oi.getFlipFactor());
+
+
+        if(Robot.oi.getFlipFactor() == 0) {
+            Robot.intake.setFlipperSpeed(0.05);
+        } else {
+            Robot.intake.setFlipperSpeed(Robot.oi.getFlipFactor());
+        }
+
      }
 }
