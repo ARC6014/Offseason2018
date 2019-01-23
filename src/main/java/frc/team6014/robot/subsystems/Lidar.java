@@ -5,15 +5,19 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
+/*
 package frc.team6014.robot.subsystems;
 
 import com.armabot.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
+*/
 
 /**
  * LIDAR: Detects the locations of the closest objects in each direction around the robot with lasers.
  * Parses the information into a grid that is then returned.
  */
+
+/*
 public class Lidar extends Subsystem
 {
     // Subsystem needed override
@@ -121,3 +125,4 @@ public class Lidar extends Subsystem
         }
     }
 }
+*/

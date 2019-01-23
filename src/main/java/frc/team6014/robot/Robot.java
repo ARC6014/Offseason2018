@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import frc.team6014.robot.autonomous.commandgroups.*;
-import frc.team6014.robot.subsystems.Lidar;
+//import frc.team6014.robot.subsystems.Lidar;
 import frc.team6014.robot.subsystems.Drive;
 import frc.team6014.robot.subsystems.Intake;
 import frc.team6014.robot.subsystems.MotionController;
