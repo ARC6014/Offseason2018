@@ -72,10 +72,10 @@ public class Robot extends TimedRobot
         SmartDashboard.putNumber("Accel X", motionController.getAccelX());
         SmartDashboard.putNumber("Accel Y", motionController.getAccelY());
         SmartDashboard.putNumber("Accel Z", motionController.getAccelZ());
-        SmartDashboard.putNumber("Drive X",oi.getDriveX());
-        SmartDashboard.putNumber("Drive Y",oi.getDriveY());
+        //SmartDashboard.putNumber("Drive X",oi.getDriveX());
+        //SmartDashboard.putNumber("Drive Y",oi.getDriveY());
         SmartDashboard.putNumber("Elevator Y",oi.getElevator());
-        SmartDashboard.putNumber("Flip Factor",oi.getFlipFactor());
+        //SmartDashboard.putNumber("Flip Factor",oi.getFlipFactor());
     }
 
     /**

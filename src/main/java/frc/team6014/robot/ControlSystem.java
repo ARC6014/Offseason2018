@@ -2,8 +2,8 @@ package frc.team6014.robot;
 
 abstract public class ControlSystem {
 
-    abstract public double getDriveX();
-    abstract public double getDriveY();
+    //abstract public double getDriveX();
+    //abstract public double getDriveY();
 
 
     boolean prevReverseButton = false;
@@ -30,9 +30,10 @@ abstract public class ControlSystem {
         return holdFactor;
     }
 
-    abstract public double getFlipNegative();
-    abstract public double getFlipPositive();
+    //abstract public double getFlipNegative();
+    //abstract public double getFlipPositive();
 
+    /*
     public double getFlipFactor() {
         if(Math.abs(getFlipPositive()-getFlipNegative())<0.05) {
             return 0;
@@ -40,6 +41,9 @@ abstract public class ControlSystem {
             return getFlipPositive()-getFlipNegative();
         }
     }
+    */
+
+    abstract public double getFlip();
 
     abstract public double getElevator();
     abstract public boolean getHoldElevator();

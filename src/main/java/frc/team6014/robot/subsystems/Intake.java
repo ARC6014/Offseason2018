@@ -12,15 +12,16 @@ import frc.team6014.robot.Robot;
 
 public class Intake extends Subsystem
 {
-    VictorSPX intakeMain = RobotMap.intakeLeft;
-    VictorSPX intakeRight = RobotMap.intakeRight;
-    VictorSPX flipper = RobotMap.flipper;
+    VictorSPX intakeMain = RobotMap.intake;
+    //VictorSPX intakeRight = RobotMap.intakeRight;
+    //VictorSPX flipperRight = RobotMap.flipperRight;
+    VictorSPX flipperLeft = RobotMap.flipperLeft;
 
 
     public Intake() {
-        intakeMain.setInverted(true);
-        flipper.setInverted(true);
-        intakeRight.follow(intakeMain);
+        //flipperLeft.setInverted(true);
+        //flipperRight.follow(flipperLeft);
+        //intakeRight.follow(intakeMain);
     }
 
 
@@ -31,7 +32,7 @@ public class Intake extends Subsystem
 
     public void setIntakeSpeed(double speed) { intakeMain.set(ControlMode.PercentOutput,speed);}
 
-    public void setFlipperSpeed(double speed) { flipper.set(ControlMode.PercentOutput,speed);}
+    public void setFlipperSpeed(double speed) { flipperLeft.set(ControlMode.PercentOutput,speed);}
 
 
 }

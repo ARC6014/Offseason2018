@@ -10,8 +10,8 @@ public class AlternativeControl extends ControlSystem {
     GenericHID.Hand rightStick = GenericHID.Hand.kRight;
     GenericHID.Hand leftStick = GenericHID.Hand.kLeft;
 
-    public double getDriveX() { return xboxDrive.getX(rightStick); }
-    public double getDriveY() { return -xboxDrive.getY(leftStick); }
+    //public double getDriveX() { return xboxDrive.getX(rightStick); }
+    //public double getDriveY() { return -xboxDrive.getY(leftStick); }
     public boolean getReverseButton() { return xboxDrive.getYButton(); }
 
     public double getElevator() { return -xbox.getY(rightStick); }
@@ -19,8 +19,11 @@ public class AlternativeControl extends ControlSystem {
 
     public boolean getIntake() { return xbox.getBumper(leftStick); }
     public boolean getLaunch() { return xbox.getBumper(rightStick); }
-    public double getFlipPositive() { return xboxDrive.getTriggerAxis(leftStick); }
-    public double getFlipNegative() { return xboxDrive.getTriggerAxis(rightStick); }
+    //public double getFlipPositive() { return xboxDrive.getTriggerAxis(leftStick); }
+    //public double getFlipNegative() { return xboxDrive.getTriggerAxis(rightStick); }
+    public double getFlip() {
+        return xbox.getY(leftStick);
+    }
 
     public boolean getDropAction() { return xbox.getBButton(); }
     public boolean liftLevel_1() { return xbox.getAButton(); }

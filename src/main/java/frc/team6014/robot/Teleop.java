@@ -19,7 +19,7 @@ public class Teleop {
             }
             System.out.println("");
         }*/
-        Robot.drive.arcadeDrive(Robot.oi.getDriveY()*Robot.oi.getReverseFactor(),Robot.oi.getDriveX());
+        //Robot.drive.arcadeDrive(Robot.oi.getDriveY()*Robot.oi.getReverseFactor(),Robot.oi.getDriveX());
 
         boolean elevatorBusy = false;
 
@@ -87,10 +87,10 @@ public class Teleop {
         }
 
 
-        if(Robot.oi.getFlipFactor() == 0) {
+        if(Robot.oi.getFlip() == 0) {
             Robot.intake.setFlipperSpeed(0.05);
         } else {
-            Robot.intake.setFlipperSpeed(Robot.oi.getFlipFactor());
+            Robot.intake.setFlipperSpeed(Robot.oi.getFlip()*0.5);
         }
 
      }

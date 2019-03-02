@@ -11,17 +11,20 @@ public class BasicControl extends ControlSystem {
     GenericHID.Hand leftStick = GenericHID.Hand.kLeft;
 
 
-    public double getDriveX() { return xbox.getX(leftStick); }
-    public double getDriveY() { return -xbox.getY(leftStick); }
+    //public double getDriveX() { return xbox.getX(leftStick); }
+    //public double getDriveY() { return -xbox.getY(leftStick); }
     public boolean getReverseButton() { return xbox.getYButton(); }
 
-    public double getElevator() { return -xbox.getY(rightStick); }
+    public double getElevator() { return xbox.getY(rightStick); }
     public boolean getHoldElevator() { return xbox.getXButton(); }
 
     public boolean getIntake() { return xbox.getBumper(leftStick); }
     public boolean getLaunch() { return xbox.getBumper(rightStick); }
-    public double getFlipPositive() { return xbox.getTriggerAxis(leftStick); }
-    public double getFlipNegative() { return xbox.getTriggerAxis(rightStick); }
+    //public double getFlipPositive() { return xbox.getTriggerAxis(leftStick); }
+    //public double getFlipNegative() { return xbox.getTriggerAxis(rightStick); }
+    public double getFlip() {
+        return xbox.getY(leftStick);
+    }
 
     public boolean getDropAction() {return xbox.getBButton();}
     public boolean liftLevel_1() { return xbox.getAButton(); }

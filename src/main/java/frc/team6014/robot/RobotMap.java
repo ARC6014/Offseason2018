@@ -17,18 +17,17 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;
  */
 public class RobotMap 
 {
-    public static VictorSPX frontLeft = new VictorSPX(4);
+    public static VictorSPX frontLeft = new VictorSPX(1);
     public static VictorSPX rearLeft = new VictorSPX(2);
-    public static VictorSPX frontRight = new VictorSPX(5);
-    public static VictorSPX rearRight = new VictorSPX(13);
+    public static VictorSPX frontRight = new VictorSPX(8);
+    public static VictorSPX rearRight = new VictorSPX(5);
 
 
-    public static VictorSPX elevatorLeft = new VictorSPX(9);
-    public static VictorSPX elevatorRight = new VictorSPX(8);
+    public static VictorSPX elevatorLeft = new VictorSPX(6);
+    //public static VictorSPX elevatorRight = new VictorSPX(8);
 
-    public static VictorSPX intakeLeft = new VictorSPX(11);
-    public static VictorSPX intakeRight = new VictorSPX(6);
-    public static VictorSPX flipper = new VictorSPX(7);
-
-
+    public static VictorSPX intake = new VictorSPX(7);
+    //public static VictorSPX intakeRight = new VictorSPX(0);
+    public static VictorSPX flipperLeft = new VictorSPX(3);
+    public static VictorSPX flipperRight = new VictorSPX(4);
 }
